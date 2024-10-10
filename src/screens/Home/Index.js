@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Alert, FlatList, Image, Pressable, Text, View } from "react-native";
+import { Alert, FlatList, Image, Pressable, Text, TouchableOpacity, View } from "react-native";
 import Styles from "./Style";
 import FlatItem from "../../components/FlatItem/Index";
 import { BaseUrl } from "../../assets/Data";
@@ -32,7 +32,7 @@ const Home = ({ navigation }) => {
             <FlatItem
                 image={item.imageUrl}
                 heading={item.category}
-                onPress={()=>navigation.navigate('ProductView',{category: item.category})}
+                onPress={() => navigation.navigate('ProductView', { category: item.category })}
             // text={item.text}
             // lastupdate={item.lastupdate}
             // onpress={() => handleLearnMore()}
@@ -53,6 +53,9 @@ const Home = ({ navigation }) => {
             <Pressable onPress={() => navigation.navigate('Settings')}>
                 <View style={Styles.header}>
                     <Image style={Styles.gear} source={require('../../assets/images/gear.png')} />
+                    <TouchableOpacity onPress={() => navigation.navigate('Cart')}>
+                        <Image style={Styles.gear} source={require('../../assets/images/cart.png')} />
+                    </TouchableOpacity>
                 </View>
             </Pressable>
             <Text style={Styles.heading}>Categories</Text>

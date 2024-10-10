@@ -9,8 +9,8 @@ const Settings = ({ navigation }) => {
     return (
         <View style={Styles.container}>
             <Header text="Settings" onpress={() => navigation.goBack()} />
-            <SettingItem text="Add Product" onpress={() => navigation.navigate('Product')} />
-            <SettingItem text="Add Category" onpress={() => navigation.navigate('AddCategory')} />
+            {/* <SettingItem text="Add Product" onpress={() => navigation.navigate('Product')} /> */}
+            <SettingItem text="My Ordersٖ" onpress={() => navigation.navigate('MyOrders')} />
             <SettingItem text="Privacy Policy" onpress={() => navigation.navigate('PrivacyPolicy')} />
             <SettingItem text="Term of Use" onpress={() => navigation.navigate('Terms')} />
             <SettingItem text="Contact Us" onpress={() => navigation.navigate('ContactUs')} />

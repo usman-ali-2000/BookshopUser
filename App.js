@@ -21,6 +21,7 @@ import Product from './src/screens/Product';
 import ProductView from './src/screens/ProductView';
 import Cart from './src/screens/Cart';
 import Bill from './src/screens/Bill';
+import MyOrders from './src/screens/MyOrders';
 
 const Stack = createNativeStackNavigator();
 
@@ -116,6 +117,11 @@ const App = () => {
         <Stack.Screen
           name='Bill'
           component={Bill}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name='MyOrders'
+          component={MyOrders}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
-import { addToCart } from './cartStorage';  // Import cart storage methods
+import { addToCart } from './CartManage';
 
 const ProductComponent = ({ product }) => {
 

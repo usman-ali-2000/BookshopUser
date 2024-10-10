@@ -36,7 +36,8 @@ const Styles = {
     gear:{
         height:30,
         width:30,
-        margin:15
+        margin:15,
+        margin:'3%'
     }
 }
 

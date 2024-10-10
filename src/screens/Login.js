@@ -38,7 +38,7 @@ export default function Login({ navigation }) {
             return;
         }
 
-       await AsyncStorage.setItem('email', email);
+        await AsyncStorage.setItem('email', email);
 
         const data = {
             email,
